@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Симплексный метод</title>
+
+    <link rel="stylesheet" href="style.css" id="light" title="light">
+
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+
+<body>
+
+<main class="globalmain">
+    <table class="gm-input">
+        <thead>
+            <tr>
+                <th>Сырьё</th>
+
+                <th class="gm-input-2head" colspan="3">
+                    Затраты сырья на еденицу продукции
+                </th>
+
+                <th>Запас сырья</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>3.5</td>
+                <td>7</td>
+                <td>4.2</td>
+                <td>1400</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>4</td>
+                <td>5</td>
+                <td>8</td>
+                <td>2000</td>
+            </tr>
+
+            <tr>
+                <td>Прибыль от ед. прод.</td>
+                <td>1</td>
+                <td>3</td>
+                <td>3</td>
+                <td></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <div class="dropdown">
+        <button class="dropbtn">Стили</button>
+        <div class="dropdown-content">
+            <button type="button" onclick="changeCSS('style.css', 0)">Вариант 1</button>
+            <button type="button" onclick="changeCSS('style_dark.css', 0)">Вариант 2</button>
+        </div>
+    </div>
+
+</main>
+
+
+    <button type="button" class="gm-add_column button-6" onclick="addColumn()">Добавить Колонку</button>
+    <button type="button" class="gm-add_row button-6" onclick="addRow()">Добавить Строку</button>
+    <button type="button" class="gm-calculate button-6" onclick="calculate()">Рассчитать</button>
+
+    <div class="output">
+
+    </div>
+</main>
+
+<!--<footer class="globalfooter">-->
+
+<!--</footer>-->
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
